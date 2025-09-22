@@ -1,0 +1,225 @@
+{% extends 'refinery/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!--Jumbotron section STARTS-->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <img src="{% static 'pictures/jumbo.webp' %}" class="d-block w-100" alt="Image 1">
+      <div class="dark-overlay"></div>
+      <div class="overlay-jumbo col-lg-6">
+        <h2>Welcome to Fortis Oil Tank Storage</h2>
+        <p>We build the bridge between the world of ideas and the delivery of products</p>
+        <a href="{% url 'terminals' %}" class="btn btn-primary">View our storages</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <img src="{% static 'pictures/jumbo1.webp' %}" class="d-block w-100" alt="Image 2">
+      <div class="dark-overlay"></div>
+      <div class="overlay-jumbo col-lg-6">
+        <h2>Your Trusted Energy Partner</h2>
+        <p>From tank storage to logistics management, we deliver high standards and dependable service worldwide.</p>
+
+        <a href="{% url 'aboutus' %}" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <img src="{% static 'pictures/jumbo2.webp' %}" class="d-block w-100" alt="Image 3">
+      <div class="dark-overlay"></div>
+      <div class="overlay-jumbo col-lg-6">
+        <h2>Global Reach</h2>
+        <p>Efficient and credible tank farms at Rotterdam, Singapore, Houston and other oil terminals</p>
+        <a href="{% url 'contact' %}" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--Jumbotron section ENDS-->
+
+
+
+<!--Visionary section STARTS-->
+
+<div class="container" id="visionary">
+    <div class="row">
+        <div class="col-12 text-center py-5">
+            <h4>Visionary Pursuits</h4>
+            <span>Who We Are & Our Mission</span>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+
+            <img src="{% static 'pictures/visionary.jpg' %}" class="d-block h-10 w-100" alt="">
+
+            <br>
+
+            <h5 class="text-center">TANK STORAGE SERVICES</h5>
+
+            <br>
+
+            <p>At FortOilStorage, we partner with major ports in Rotterdam to expand our tank farm capacity and strengthen oil storage and transport solutions.</p>
+
+            <p>Our modern tanks are designed for safe handling of a wide range of petroleum products, meeting international safety and quality standards.</p>
+
+            <p>We offer both short-term and long-term storage options, keeping supply chains reliable and cost-efficient for our clients.</p>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+
+            <img src="{% static 'pictures/visionary1.jpg' %}" class="d-block w-100" style="height: 239px;" alt="">
+
+            <br>
+
+            <h5 class="text-center">OIL TERMINALS</h5>
+
+            <br>
+
+            <p>We operate terminals at Singapore, the Netherlands, Fujairah, and Houston—strategic hubs for global energy logistics.</p>
+
+            <p>Each terminal follows strict safety and environmental protocols, ensuring safe, reliable, and effective handling of bulk liquid products.</p>
+
+            <p>With world-class facilities in these key locations, we provide customers around the globe with dependable access to vital energy storage and distribution.</p>
+        </div>
+
+        <div class="col-lg-4 col-sm-12">
+
+            <img src="{% static 'pictures/visionary2.jpg' %}" class="d-block w-100" alt="" style="height: 239px;">
+
+            <br>
+
+            <h5 class="text-center">SHIPPING & TRANSPORTATION</h5>
+
+            <br>
+
+            <p>Shipping and logistics are central to our business, moving oil and raw materials to where they are most needed.</p>
+
+            <p>Through a trusted network of vessels and partners, we ensure secure, timely, and cost-effective transport.</p>
+
+            <p>By connecting storage, terminals, and shipping, FortOilStorage delivers smooth end-to-end energy logistics worldwide.</p>
+
+        </div>
+    </div>
+</div>
+
+<!--Visionary section ENDS-->
+
+
+
+<!--About section STARTS-->
+
+<div class="container-fluid" id="about">
+    <div class="row">
+        <div class="col-lg-6 col-12 aboutHeader">
+            <h4>About Us</h4>
+
+            <br>
+
+            <p>FortOilStorage is a trusted leader in the global energy logistics sector, founded by experts with deep experience in tank storage, shipping, and distribution. With strategic terminals in Singapore, the Netherlands, Fujairah, and Houston, we provide secure and efficient storage solutions, reliable maritime transportation, and end-to-end logistics services. Driven by a commitment to safety, innovation, and excellence, FortOilStorage has built long-standing partnerships with clients worldwide who rely on us as their dedicated energy logistics partner.</p>
+
+            <a href="#" class="btn btn-quote btn-warning" style="margin-right: 20px;" role="button">Learn More</a>  
+        </div>
+
+        <div class="col-lg-6 col-12 msb-3">
+            <img src="{% static 'pictures/about.jpg' %}" class="d-block w-100" alt="...">
+        </div>
+    </div>
+</div>
+
+<!--About section ENDS-->
+
+
+
+
+<!-- ======= Cta Section ======= -->
+<section id="cta" class="cta">
+    <div class="container" data-aos="zoom-in">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h5>We Are Committed To Providing Top-Notch Tank Storage</h5>
+
+                <p>Over the years, SVNT Tanks has grown into a multifaceted tank storage service provider with a focus on international markets for tanker chartering and tank storage. With access to VLCCs, SVNT Tanks offers large independent oil hub terminals and transshipment in Singapore and the world for handling crude and the full range of petroleum products.</p>
+
+                <a class="cta-btn msb-3" href="{% url 'contact' %}">Talk To Us Today!</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-4" id="cta-inner">
+                        <div>
+                            <i class="fa-solid fa-people-arrows"></i>
+                            <p>We Empower</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <p>We give each other the tools we need to make wise choices and accept responsibility for our deeds. We are confident that fostering a work environment where everyone is motivated and confident to collaborate in a transparent, respectful, and inclusive way is the only way to achieve our goals.</p>
+                    </div>
+
+                    <div class="col-lg-4" id="cta-inner">
+                        <div>
+                            <i class="fa-regular fa-handshake"></i>
+                            <p>We Lead</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <p>We are aware that each of us can help to create a sustainable future. We firmly believe that even small changes can have a significant effect and that we can positively influence change and innovation. We adhere to a best-in-class performance in sustainability, service, and efficiency because we believe in setting an example by doing so.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Cta Section -->
+
+
+
+<!--Quick Links section STARTS-->
+<div class="container-fluid" id="quicklinks">
+    <div class="row psy-5 psx-5 pcy-2 pcx-2" data-aos="fade-in">
+        <div class="col-lg-12">
+            <h4>FortOilStorage Professional Skills</h4>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card-custom h-100 psy-4 psx-5 pcy-2 pcx-2">
+                <div class="card-body">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h5>Certified Engineers</h5>
+                    <p>At FortOilStorage, we believe that world-class infrastructure must be matched by world-class expertise. That is why every one of our terminals is operated and maintained by certified engineers and highly trained professionals.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="card-custom h-100 psy-4 psx-5 pcy-2 pcx-2">
+                <div class="card-body">
+                    <i class="fa-solid fa-toolbox"></i>
+                    <h5>Modern Equipment</h5>
+                    <p>At FortOilStorage, we invest in state-of-the-art storage systems to ensure maximum efficiency and safety at all our terminals. Our equipment is regularly upgraded and maintained to meet the highest international standards, giving clients confidence in the reliability of our facilities.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-4">
+            <div class="card-custom h-100 psy-4 psx-5 pcy-2 pcx-2">
+                <div class="card-body">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                    <h5>Efficient Work</h5>
+                    <p>We continually make strategic infrastructure investments to enhance operational safety and optimize the flow of energy products through our terminals. This ensures that our facilities in Singapore, the Netherlands, Fujairah, and Houston operate at world-class standards.</p>
+                </div>
+            </div>
+            </div>
+    </div>
+</div>
+
+<!--Quick Links section ENDS-->
+
+
+
+{% endblock %}
